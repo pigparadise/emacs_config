@@ -75,15 +75,6 @@
   )
 )
 
-(custom-set-faces
-  '(whitespace-space
-    ((((class color) (background dark)) (:background "none" :foreground "none"))
-     (((class color) (background light)) (:background "none" :foreground "none"))
-     (t (:inverse-video t))
-    )
-   )
-)
-
 ;; Tab缩进
 (setq-default indent-tabs-mode nil) ;;用空格代替tab
 (setq default-tab-width 2); 每次按tab缩进的空格数ggggg
@@ -172,6 +163,12 @@
   ;; custom-set-faces was added by Custom.
   ;; If you edit it by hand, you could mess it up, so be careful.
   ;; Your init file should contain only one such instance.
+  '(whitespace-space
+    ((((class color) (background dark)) (:background "none" :foreground "none"))
+     (((class color) (background light)) (:background "none" :foreground "none"))
+     (t (:inverse-video t))
+    )
+   )
 )
 
 (put 'upcase-region 'disabled nil)
