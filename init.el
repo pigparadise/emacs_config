@@ -91,7 +91,7 @@
 (require 'jinja2-mode)
 (add-to-list 'auto-mode-alist '("\\.pat$\\|\\.jinja$" . jinja2-mode))
 
-;; jinja-mode
+;; ejs-mode
 (add-to-list 'auto-mode-alist '("\\.ejs$" . html-mode))
 
 ;; protobuf-mode
@@ -105,7 +105,10 @@
 (require 'lua-mode)
 (add-to-list 'auto-mode-alist '("\\.lua$" . lua-mode))
 (add-to-list 'interpreter-mode-alist '("lua" . lua-mode))
-
+(add-hook 'lua-mode-hook
+          (lambda()
+            (setq lua-indent-level 4)
+            ))
 
 ;; -------- 代码补全 --------
 ;; autocomplete
