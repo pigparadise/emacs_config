@@ -106,9 +106,13 @@
 (add-to-list 'auto-mode-alist '("\\.lua$" . lua-mode))
 (add-to-list 'interpreter-mode-alist '("lua" . lua-mode))
 (add-hook 'lua-mode-hook
-          (lambda()
-            (setq lua-indent-level 4)
-            ))
+          (lambda() (setq lua-indent-level 4)))
+
+;; CC-mode
+(setq c-basic-offset 2)
+(setq c-default-style '((java-mode . "java")
+                        (awk-mode . "awk")
+                        (other . "linux")))
 
 ;; -------- 代码补全 --------
 ;; autocomplete
