@@ -1,6 +1,6 @@
 ;; -------- basic load path --------
 (add-to-list 'load-path "/usr/share/emacs/site-lisp")
-(add-to-list 'load-path "~/.emacs.d/")
+;; (add-to-list 'load-path "~/.emacs.d/")
 
 ;; -------- 插件管理 --------
 (add-to-list 'load-path "~/.emacs.d/el-get/el-get")
@@ -29,10 +29,10 @@
 (menu-bar-mode nil)
 
 ;; 去掉工具栏
-(tool-bar-mode nil)
+;; (tool-bar-mode nil)
 
 ;; 去掉滚动栏
-(scroll-bar-mode nil)
+;; (scroll-bar-mode nil)
 
 ;; 显示匹配的括号
 (show-paren-mode t)
@@ -45,7 +45,7 @@
 
 
 ;; -------- code viewer --------
-(require 'xcscope)
+;; (require 'xcscope)
 ;; (add-hook 'c-mode-common-hook
 ;; '(lambda ()
 ;; (require 'xcscope)))
