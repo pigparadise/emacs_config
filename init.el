@@ -1,6 +1,6 @@
 ;; -------- basic load path --------
 (add-to-list 'load-path "/usr/share/emacs/site-lisp")
-(add-to-list 'load-path "~/.emacs.d/")
+(add-to-list 'load-path "~/.emacs.d/lisp")
 
 ;; -------- 插件管理 --------
 (add-to-list 'load-path "~/.emacs.d/el-get/el-get")
@@ -55,7 +55,7 @@
 ;; (set-default-font "Monaco-11")
 
 ;; color theme
-(load "~/.emacs.d/color-theme-molokai.el")
+(load "~/.emacs.d/lisp/color-theme-molokai.el")
 (color-theme-molokai)
 
 
