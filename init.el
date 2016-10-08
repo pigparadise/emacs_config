@@ -12,11 +12,18 @@
       (append
        '(popup fuzzy auto-complete auto-complete-clang 
 	       color-theme
-	       php-mode lua-mode jinja2-mode protobuf-mode js2-mode
+	       php-mode lua-mode jinja2-mode protobuf-mode js2-mode go-mode yaml-mode
 	       )
        (mapcar 'el-get-as-symbol (mapcar 'el-get-source-name el-get-sources))))
 
 (el-get 'sync my-packages)
+
+;; -------- markdown --------
+(autoload 'markdown-mode "markdown-mode"
+   "Major mode for editing Markdown files" t)
+(add-to-list 'auto-mode-alist '("\\.text\\'" . markdown-mode))
+(add-to-list 'auto-mode-alist '("\\.markdown\\'" . markdown-mode))
+(add-to-list 'auto-mode-alist '("\\.md\\'" . markdown-mode))
 
 ;; -------- GUI --------
 ;; 行列号显示模式
